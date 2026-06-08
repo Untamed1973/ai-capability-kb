@@ -63,3 +63,14 @@ het van Roel moet zijn en door elke executor leesbaar moet blijven.
 
 `unverified` → `reviewed` → `tested` → `canonical`, met `rejected` als zijspoor.
 Alleen `tested` en `canonical` tellen mee voor autonomie.
+
+## 9. Kaart-identiteit = bron, niet naam
+
+De identiteit van een kaart is de **eigenaar + Source URL**, nooit de naam alleen. Namen
+botsen — twee verschillende tools kunnen dezelfde naam dragen (zie de twee "Graphify"-
+projecten: `safishamsi/graphify`, een assistant-skill, vs. een eerder genoteerd
+gelijknamig pip-pakket). Een lezende laag (Codex, Claude Code, of welke laag dan ook) mag
+een kaart daarom nooit op titel alleen matchen. Het onderscheid zit in eigenaar, URL, en
+vooral in *wat het doet en waarvoor het geschikt is* — de volledige kaart, niet de kop.
+Bij gelijkende kandidaten worden ze naast elkaar gelegd en op functie onderscheiden, niet
+samengevouwen tot één.

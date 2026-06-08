@@ -8,6 +8,25 @@ Formaat: nieuwste bovenaan.
 
 ---
 
+## 2026-06-08 — Doctrine: kaart-identiteit = bron, niet naam
+
+**Beslissing:** vastgelegd als principe (`OPERATING_PRINCIPLES.md` §9) dat de identiteit
+van een kaart de **eigenaar + Source URL** is, nooit de naam alleen. De router
+(`CAPABILITY_ROUTER.md`, stap 4) is aangevuld: match nooit op naam alleen, en leg bij
+gelijkende kandidaten beide voor met hun verschil.
+
+**Aanleiding:** bij het aanmaken van een Graphify-kaart bleken er twee verschillende
+projecten met de naam "Graphify" te bestaan — `safishamsi/graphify` (een assistant-skill,
+uitgebracht april 2026) en een eerder in de overdracht genoteerd gelijknamig pip-pakket.
+Verschillende eigenaar, verschillende vorm, verschillende functie. Een systeem dat op naam
+matcht zou deze verwarren. Naarmate de bibliotheek groeit, nemen zulke botsingen toe.
+
+**Bewust géén nieuw veld.** Overwogen is een `Verwar niet met`-veld. Afgewezen omdat
+eigenaar en Source URL de identiteit al dragen; een extra veld zou de meeste kaarten leeg
+belasten (tegen §5/§7). De doctrine stuurt de lezende laag; dat is voldoende. De
+onderscheidende informatie staat al in de bestaande velden (owner, URL, "wat het doet") —
+de doctrine zorgt dat de lezer ernaar kijkt in plaats van op de titel af te gaan.
+
 ## 2026-06-08 — Knowledge-kaart: twee herzieningsvelden toegevoegd
 
 **Beslissing:** aan de knowledge-kaart in `CARD_SCHEMA.md` twee velden toegevoegd, direct

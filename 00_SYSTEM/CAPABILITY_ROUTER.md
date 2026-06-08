@@ -19,7 +19,10 @@ taak. Hij **matcht** niet alleen, hij **weegt**.
 3. **Doorzoek de knowledge base** — wat weten we al? (`02_KNOWLEDGE/`, vooral `patterns/`
    voor bestaande bouwtekeningen en `case_studies/` voor eerdere uitkomsten)
 4. **Match én weeg** — welke capabilities/agents/workflows passen, en hoe verhouden ze
-   zich? Gebruik de beslisvelden (zie hieronder).
+   zich? Gebruik de beslisvelden (zie hieronder). Match nooit op naam alleen — namen kunnen
+   botsen (zie `OPERATING_PRINCIPLES.md` §9). Lees eigenaar, URL en functie; bij twee
+   gelijkende kandidaten leg je beide voor met hun verschil, in plaats van de eerste te
+   kiezen.
 5. **Stel de kortste veilige route voor** — inclusief het autonomie-oordeel.
 6. **Genereer de taak/prompt** — ready-to-paste voor de gekozen executor.
 
