@@ -21,6 +21,8 @@ executor met toegang tot de echte bestanden.
 4. `01_CAPABILITIES/` — wat we kunnen gebruiken (de gereedschapskist).
 5. `02_KNOWLEDGE/` — wat we weten (de bibliotheek + patterns).
 6. `00_SYSTEM/DECISION_LOG.md` — waarom het systeem is zoals het is.
+7. `00_SYSTEM/SOURCE_VERIFICATION.md` — hoe je een bron verifieert (origineel
+   vs. kloon, duplicaten herkennen). Raadpleeg dit telkens als je een bron beoordeelt.
 
 ## De gouden regels (samenvatting — bron is OPERATING_PRINCIPLES.md)
 

@@ -8,6 +8,16 @@ Formaat: nieuwste bovenaan.
 
 ---
 
+## 2026-06-08 — Nieuw document: SOURCE_VERIFICATION.md
+
+**Beslissing:** een bron-verificatierecept vastgelegd als eigen document in `00_SYSTEM/SOURCE_VERIFICATION.md`, met een verwijzing vanuit `CONTEXT_PACK.md` (leesvolgorde, regel 7). Het recept ordent de signalen van sterkst naar zwakst: bron zelf lezen, `is_fork`/network-root, eigenaar als anker, moeilijk-vervalsbare signalen, malware-rode-vlaggen, functie-match.
+
+**Waarom:** het scheiden van origineel en kloon/malware en het herkennen van duplicaten kwam herhaaldelijk terug (de twee "Graphify"-projecten). De doctrine (§9) zegt dát identiteit = eigenaar + Source URL; dit document zegt hóé je dat verifieert. Als de lezende laag straks de KB raadpleegt vóór ze iets nieuws onderzoekt, hoort ze ook het verificatierecept te kennen.
+
+**Scope:** puur instructie-document. Geen schema-wijziging, geen nieuwe status.
+
+---
+
 ## 2026-06-08 — Doctrine: kaart-identiteit = bron, niet naam
 
 **Beslissing:** vastgelegd als principe (`OPERATING_PRINCIPLES.md` §9) dat de identiteit
