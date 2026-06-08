@@ -76,6 +76,8 @@ Beantwoordt: "wat weten we over deze bron, en hoe helpt het ons?"
 - **Gerelateerde capabilities** / **Gerelateerde knowledge-kaarten**
 - **Risico's / limieten**
 - **Volgende actie**
+- **Herzien wanneer** — het moment of de trigger om deze bron opnieuw te bekijken. Bv. "bij major release", "over 3 maanden", "als de repo richting honderden bestanden groeit". Leeg = geen herzieningsmoment gepland.
+- **Wat zou dit bruikbaar maken** — de concrete drempel waarop de bron alsnog interessant wordt (het *wat*, niet het *wanneer*). Bv. "volwassen selective-install", "bij die omvang kantelt de token-winst".
 - **Completeness-status** + `OPEN:`-regel
 - **Status** — unverified / reviewed / tested / rejected / canonical
 

@@ -8,6 +8,27 @@ Formaat: nieuwste bovenaan.
 
 ---
 
+## 2026-06-08 — Knowledge-kaart: twee herzieningsvelden toegevoegd
+
+**Beslissing:** aan de knowledge-kaart in `CARD_SCHEMA.md` twee velden toegevoegd, direct
+ná "Volgende actie": **Herzien wanneer** en **Wat zou dit bruikbaar maken**.
+
+**Waarom:** bronnen die om een tijdelijke of contextafhankelijke reden afvielen (bv. een
+tool die nu te groot is, maar bij groei kantelt) mogen niet als `rejected` weggeschreven
+worden — dat is een definitief oordeel. Ze horen "geparkeerd, herzienbaar" te zijn. De
+twee velden scheiden het bron-oordeel (status: wat we er nú van vinden) van het
+herzieningssignaal (wanneer en waarom opnieuw kijken), zodat een bron `reviewed` kan
+blijven mét een expliciet moment en drempel om terug te komen.
+
+**Onderscheid tussen de twee:**
+- *Herzien wanneer* = het **wanneer** (tijdstip of trigger).
+- *Wat zou dit bruikbaar maken* = het **wat** (welke verandering de bron de moeite waard
+  maakt).
+
+**Scope:** alleen de knowledge-kaart. De statustabel is bewust niet gewijzigd; "geparkeerd,
+herzienbaar" wordt nu gedragen door status `reviewed` + ingevulde herzieningsvelden, niet
+door een nieuwe status.
+
 ## 2025 — Oprichting van de AI Capability KB
 
 **Beslissing:** een project-agnostische kennis- en capability-bank bouwen als standalone
