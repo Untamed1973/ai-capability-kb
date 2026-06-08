@@ -118,35 +118,21 @@ committen. Push doet Roel zelf.
   Agents SDK, LangGraph, n8n, Activepieces, Mautic, Dittofeed, Twenty, PostHog, GrowthBook,
   Robyn, e.a. — patroon-oogst, niet platform-adoptie). Lege `~/13_DOCS` verwijderd.
 - KB-overdracht (dit bestand) woont nu in `~/dev/kb/KB_SESSIE_OVERDRACHT.md`.
+- **Taak X — ALLURE verhuisd** naar `~/dev/allure` (git intact, remote/commits behouden,
+  oud pad weg). In `13_DOCS/OPERATOR_ONE_MASTER.md` 6 live padverwijzingen aangepast naar het
+  nieuwe pad; regel 631 (historische key-les) bewust ongemoeid gelaten. CORRECTIE op vorige
+  overdracht: de geschatte "~91 verwijzingen" waren er in werkelijkheid 22, waarvan 21 in
+  genegeerde `.next/` build-cache (buiten git) — slechts EEN echt bestand was werk. Bevestigt
+  de doctrine: een eerdere overdracht is geen onbetwistbaar feit, toets aan de echte bron.
+  `.backup`/`.bak` toegevoegd aan ALLURE's `.gitignore`. Gepusht.
+- **Taak C — KB gekoppeld aan ALLURE**: sectie "Knowledge base consultation" toegevoegd aan
+  `AGENTS.md` (tussen Codex role en Supervised mode). Bevat: raadpleeg `../kb` vóór research/
+  build, terugleg-lus, verwijzing naar `SOURCE_VERIFICATION.md` + identiteitsdoctrine. Engels,
+  passend bij de Engelse kop-helft van het bestand. Via anker-snippet, gecommit, gepusht.
 
 ---
 
 ## DEEL 3 — TE DOEN (volgende sessie, in volgorde)
-
-### Taak X — ALLURE verhuizen naar `~/dev/allure` (EERST, eigen ALLURE-sessie)
-NB: dit hoort in een Operator One/ALLURE-sessie, NIET in een KB-sessie — het raakt ALLURE's
-eigen documentatie en governance.
-- ALLURE staat nog op `~/ALLURE` (git-repo `allure-os`, live op Vercel, GitHub workflow
-  `founder-operator-runner.yml`). Map fysiek verplaatsen naar `~/dev/allure` is veilig (git
-  reist mee), MAAR: er staan ~91 verwijzingen naar het pad `~/ALLURE` / `/Users/roelvinck/ALLURE`
-  in de repo, veel in `OPERATOR_ONE_MASTER.md`. Die moeten één voor één beoordeeld worden:
-  welke zijn live instructies (aanpassen), welke zijn voorbeelden/changelog-historie (laten).
-  NIET blind via grep ombouwen — master-doc regel voor regel met Roel erbij.
-- Workflow + ask-operator.sh gebruiken relatieve paden (geverifieerd schoon). ALLURE's
-  `.claude`-config schoon. Alleen de ~91 tekstuele verwijzingen zijn het werk.
-
-### Taak C — KB koppelen aan ALLURE (in diezelfde ALLURE-sessie, ná de verhuizing)
-Doel: Claude Code raadpleegt in elk project automatisch eerst de KB voordat hij iets nieuws
-onderzoekt of bouwt.
-- Voeg aan ALLURE's control-file (`AGENTS.md`/`CLAUDE.md`) een instructie toe: "Voordat je een
-  tool/aanpak/patroon onderzoekt of bouwt: raadpleeg eerst de AI Capability KB op `../kb`.
-  Bestaat er al een kaart/pattern/beoordeelde bron? Gebruik die. Pas als de KB niets heeft,
-  onderzoek je nieuw — en leg je bevinding terug als kaart." (Terugleg-zin sluit de lus.)
-  Verwijst ook naar `00_SYSTEM/SOURCE_VERIFICATION.md` voor hóé bronnen geverifieerd worden.
-- Werkt pas schoon als ALLURE óók onder `~/dev` staat (Claude Code start vanuit `~/dev`, ziet
-  `kb` + `allure` als buurmappen). Vandaar: ná Taak X.
-- Wijzigt control-files van een draaiend project → via Claude Code in de repo, review + push
-  door Roel. Tekst voorstellen mag Claude; uitvoeren doet Roel.
 
 ### Taak Y — Instructiebestanden losser maken (eigen sessie met het bestand erbij)
 Roel is de afgelopen weken onderlegder en minder "bang" geworden. Patroon om te corrigeren:
