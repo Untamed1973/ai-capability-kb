@@ -15,9 +15,9 @@
 - **Gerelateerde capabilities:** — ontbreekt nog —
 - **Gerelateerde knowledge-kaarten:** [[msitarzewski-agency-agents]], [[alirezarezvani-claude-skills]], [[travisvn-awesome-claude-skills]]
 - **Risico's / limieten:** Te groot/breed voor de frictieloze aanpak; adopteren-als-geheel dupliceert zelf-gebouwde laag. Pro-tier ($19/seat/mo) is een betaalde laag bovenop de OSS-kern. NAAMGEVING/VEILIGHEID: het origineel is `affaan-m/everything-claude-code` (ook bereikbaar als `affaan-m/ECC` — zelfde repo, hernoeming). De overdracht noteerde een namaak/malware-kloon `arabicapp/everything-claude-code`; NIET opnieuw geverifieerd op 2026-06-08. Regel: vertrouw op de eigenaar `affaan-m`, niet op de losse reponaam — gelijknamige repos onder andere eigenaren kunnen kwaadaardig zijn (zie OPERATING_PRINCIPLES §9).
-- **Volgende actie:** AgentShield los beproeven als check op de allowlist/settings (`npx ecc-agentshield scan`, geen installatie nodig), buiten het ECC-geheel om.
-- **Herzien wanneer:** binnenkort — bij de volgende sessie waarin de allowlist/hooks worden aangeraakt; dan AgentShield draaien en beoordelen.
-- **Wat zou dit bruikbaar maken:** als AgentShield als losstaande scan waarde blijkt toe te voegen op de eigen settings/hooks, zonder de rest van ECC binnen te halen.
+- **Volgende actie:** geen openstaande — AgentShield is beproefd (2026-06-08). Oordeel: bruikbaar als incidentele check, niet als vaste tool. Draait read-only via `npx ecc-agentshield scan --path ~/.claude` zonder installatie. Resultaat op de eigen globale config: grade B (87/100); Secrets/Hooks/MCP 100, Permissions 50 — leidde tot vier extra denyregels (`sudo`, `chmod 777`, `ssh`, `> /dev/`). NB: AgentShield is van dezelfde maker als ECC, dus geen onafhankelijke audit. Niet adopteren: geen install, geen `--fix` (raakt config aan), geen Pro.
+- **Herzien wanneer:** bij een volgende grote wijziging aan allowlist/hooks/MCP — dan de scan opnieuw draaien als verificatie.
+- **Wat zou dit bruikbaar maken:** AgentShield zélf is nu bruikbaar bevonden als losse scan. De rest van ECC blijft geparkeerd; zou pas kantelen als de zelf-gebouwde laag (allowlist/debugger) tekortschiet en ECC's bredere onderdelen een gat vullen.
 
 ### Bron-signalen (GitHub, per 2026-06-08)
 - **Sterren:** ~178.000 (pagina-header; README-tekst loopt achter op ~140k)

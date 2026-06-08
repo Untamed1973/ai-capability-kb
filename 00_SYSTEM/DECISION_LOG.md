@@ -8,6 +8,16 @@ Formaat: nieuwste bovenaan.
 
 ---
 
+## 2026-06-08 — Globale denylist uitgebreid met vier regels
+
+**Beslissing:** aan de globale `~/.claude/settings.json` deny-array vier regels toegevoegd: `Bash(sudo:*)`, `Bash(chmod 777:*)`, `Bash(ssh:*)`, `Bash(*> /dev/*)`. Claude Code kan deze commando's nu in geen enkel project autonoom draaien.
+
+**Aanleiding:** AgentShield-scan (zie ECC-kaart) gaf de eigen config grade B; de enige zwakke categorie was Permissions (50/100), met als bevinding dat deze vier gangbare gevaarlijke commando's niet geblokkeerd waren. De `sudo`-regel is direct relevant: een `sudo npm` had eerder de npm-cache vervuild (root-eigendom).
+
+**Kanttekening:** de drie commando-prefixes (`sudo`, `chmod 777`, `ssh`) matchen hard; `*> /dev/*` (redirect) is zwakker omdat Claude Code's matching op commando-prefix werkt, niet op shell-redirects. De winst zit in de eerste drie.
+
+**Scope:** alleen de globale autonomie-grens. Geldt voor elk project dat de globale config erft. Sluit aan op de bestaande deny-doctrine (deny wint altijd van allow).
+
 ## 2026-06-08 — Nieuw document: SOURCE_VERIFICATION.md
 
 **Beslissing:** een bron-verificatierecept vastgelegd als eigen document in `00_SYSTEM/SOURCE_VERIFICATION.md`, met een verwijzing vanuit `CONTEXT_PACK.md` (leesvolgorde, regel 7). Het recept ordent de signalen van sterkst naar zwakst: bron zelf lezen, `is_fork`/network-root, eigenaar als anker, moeilijk-vervalsbare signalen, malware-rode-vlaggen, functie-match.
