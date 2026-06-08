@@ -21,7 +21,7 @@ from pathlib import Path
 KAART_MAPPEN = ["01_CAPABILITIES", "02_KNOWLEDGE"]
 # Bestandsnamen/mappen die geen kaart zijn en overgeslagen worden.
 SKIP_NAMEN = {"README.md"}
-SKIP_MAPPEN = {"06_EXAMPLES", ".git", ".obsidian", "node_modules"}
+SKIP_MAPPEN = {"06_EXAMPLES", "docs", ".git", ".obsidian", "node_modules"}
 
 VELDEN = {
     "type": re.compile(r"^\s*-\s*\*\*Type:\*\*\s*(.*)$", re.IGNORECASE),
