@@ -2,3 +2,7 @@
 .obsidian/
 node_modules/
 *.tmp
+
+# Backups (lokaal, nooit committen)
+.bak/
+*.backup
