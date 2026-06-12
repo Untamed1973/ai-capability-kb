@@ -8,6 +8,44 @@ Formaat: nieuwste bovenaan.
 
 ---
 
+## 2026-06-12 — hormozi-skills geadopteerd als bevroren kopie
+
+**Beslissing (Roel):** `alexsmedile/hormozi-skills` geadopteerd als **bevroren kopie** —
+een eigen kopie in het project, geen levende dependency, geen updates verwacht. Doel:
+fundament voor de offer-architectuurlaag (gratis weggever → Operator One).
+
+**Voorwaarde:** de namen "Hormozi" en "Grand Slam Offer" zijn merk-/persoonsnamen — in
+het eigen product hernoemen naar eigen taal. De methodiek is vrij, de naam niet.
+
+**Licentie:** MIT repo-breed, geverifieerd (LICENSE-file integraal gelezen, inclusief
+het recht op verkoop). Juridisch schoon voor commercieel hergebruik mits de
+copyright-notice behouden blijft.
+
+**Waarom bevroren en geen levende dependency:** de repo is zeer jong, heeft één
+maintainer en de laatste push dateert van 2026-04-27 — er is geen onderhoud te
+verwachten.
+
+**Kaart:** `02_KNOWLEDGE/github_repos/alexsmedile-hormozi-skills.md`
+
+## 2026-06-12 — sales-skills/sales geadopteerd via destillatie
+
+**Beslissing (Roel):** de kennis uit `sales-skills/sales` (m.n. `sales-funnel` en
+`sales-digital-products`) geadopteerd via **destillatie** — de methodiek herformuleren
+in eigen woorden tot eigen kennismodules (patroon: zoals coreyhaines31 → .ts-modules).
+**Nooit** verbatim bestanden meeleveren in een verkocht product.
+
+**Waarom destillatie en niet kopiëren:** de repo heeft géén repo-brede LICENSE-file;
+alleen de SKILL.md's declareren MIT in hun frontmatter, terwijl references-bestanden,
+README en assets ongelicenseerd zijn. Te onduidelijk voor verbatim hergebruik in een
+commercieel product. De funnelmodellen zelf zijn methodes/ideeën, geen beschermde tekst.
+
+**Herzienbaar:** krijgt de repo alsnog een repo-brede LICENSE, dan wordt verbatim
+hergebruik her-beoordeelbaar (zo ook vastgelegd op de kaart).
+
+**Kaart:** `02_KNOWLEDGE/github_repos/sales-skills-sales.md`
+
+---
+
 ## 2026-06-08 — Globale denylist uitgebreid met vier regels
 
 **Beslissing:** aan de globale `~/.claude/settings.json` deny-array vier regels toegevoegd: `Bash(sudo:*)`, `Bash(chmod 777:*)`, `Bash(ssh:*)`, `Bash(*> /dev/*)`. Claude Code kan deze commando's nu in geen enkel project autonoom draaien.
